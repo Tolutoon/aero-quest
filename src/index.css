@@ -107,3 +107,95 @@ h4{
   font-weight: 700;
   color: var(--blackColor);
 }
+
+.navBar{
+  position: fixed;
+  flex-direction: column;
+  width: 100%;
+  z-index: 99;
+}
+
+.navBarOne, .navBarTwo{
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+}
+
+.navBarOne {
+  background: var(--SecondaryColor);
+
+  .icon:hover {
+    color: var(--PrimaryColor);
+  }
+
+  .atb{
+    gap: 1rem;
+
+    span {
+      font-size: 13px;
+      color: var(--blackColor);
+      cursor: pointer;
+
+      &:hover {
+        color: var(--PrimaryColor);
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.navBarTwo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 3rem;
+  padding: 1.5rem 1rem;
+  transition: 0.3s ease-in-out;
+}
+
+.logoDiv{
+  .logo{
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 1240px){
+    .icon{
+      display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+  .navBarTwo{
+    top: 5rem;
+  }
+  .navBarMenu{
+    position: absolute;
+    background: var(--SecondaryColor);
+    padding: 1.5rem;
+    border-radius: 10px;
+    top: 5rem;
+    right: 50%;
+    width: 80%;
+    transform: translateX(50%);
+    z-index: 999;
+    box-shadow: var(--boxShadow);
+    border: 1px solid var(--whiteColor);
+    transition: 0.4s ease-in-out;
+
+    .menu {
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+    }
+
+  }
+  .icon{
+    display: block;
+    cursor: pointer;
+  }
+}
+
+
