@@ -24,11 +24,11 @@ function Navbar() {
         <div className="icon">
           <SiConsul />
         </div>
-        <div className="none flex">
-          <li className="flex">
-            <BsPhoneVibrate /> Support
+        <div className="flex help">
+          <li className="flex box">
+            <BsPhoneVibrate />Support
           </li>
-          <li className="flex">
+          <li className="flex box">
             <AiOutlineGlobal />
             Languages
           </li>
@@ -54,7 +54,7 @@ function Navbar() {
             <li onClick={removeNavBar} className="listitem">Destinations</li>
           </ul>
 
-          <button onClick={removeNavBar} className="btn flex btnOne">Contact</button>
+          <button onClick={removeNavBar}className="btn flex btnOne">Contact</button>
 
         </div>
           <button className="btn flex btnTwo">

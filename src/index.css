@@ -57,6 +57,9 @@ li {
   align-items: center;
 }
 
+.column{
+  flex-direction: column;
+}
 
 .none {
   display: none;
@@ -110,11 +113,23 @@ h4{
   color: var(--blackColor);
 }
 
+
+/* NavBar Styling */
+
 .navBar{
   position: fixed;
   flex-direction: column;
   width: 100%;
   z-index: 99;
+
+  .help{
+    font-size: 12px;
+    gap: 0.8rem;
+
+    .box{
+      gap: 0.4rem;
+    }
+  }
 }
 
 .navBarOne, .navBarTwo{
@@ -122,6 +137,8 @@ h4{
   padding: 1rem;
   width: 100%;
 }
+
+
 
 .navBarOne {
   background: var(--SecondaryColor);
@@ -162,7 +179,23 @@ h4{
   }
 }
 
-@media screen and (min-width: 1040px){
+.navBarMenu{
+  .menu{
+    gap: 1rem;
+    font-size: 1.2rem;
+    
+
+    .listitem{
+      transition: 0.4s ease-in-out;
+
+      &:hover{
+        color: var(--PrimaryColor);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 758px){
     .toggleIcon{
       display: none;
     }
@@ -170,6 +203,18 @@ h4{
     .btnOne{
       display: none;
     }
+
+    .navBar{
+      .help{
+        display: flex;
+      }
+    }
+
+    .navBarMenu{
+      .menu{
+        margin-right: -16rem;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -177,6 +222,13 @@ h4{
   .column {
     flex-direction: column;
   }
+
+  .navBar{
+    .help{
+      display: none;
+    }
+  }
+
 
   .navBarTwo{
     top: 4rem;
@@ -243,3 +295,33 @@ h4{
 }
 
 
+/* Home Page Styling */
+
+
+.home{
+  padding-top: 10rem;
+  text-align: center;
+
+  .mainText{
+    color: var(--blackColor);
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 2rem;
+    line-height: 2.5rem;
+    width: 80%;
+  }
+}
+
+
+
+.heroImg{
+  width: 60%;
+  .plane{
+    border-radius: 32px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+
+}
