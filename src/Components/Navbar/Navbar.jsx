@@ -26,11 +26,12 @@ function Navbar() {
         </div>
         <div className="flex help">
           <li className="flex box">
-            <BsPhoneVibrate />Support
+            <BsPhoneVibrate />
+            <span style={{fontSize: 11}}>Support</span>
           </li>
           <li className="flex box">
             <AiOutlineGlobal />
-            Languages
+            <span style={{fontSize: 11}}>Languages</span>
           </li>
         </div>
 
