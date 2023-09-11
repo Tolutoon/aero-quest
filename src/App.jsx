@@ -16,9 +16,9 @@ function App() {
       <Navbar />
       <Home />
       <Search />
-{ /*  <Support />
+      <Support />
       <Info />
-      <Lounge />
+{ /*  <Lounge />
       <Traveler />
       <Subscriber />
   <Footer /> */}

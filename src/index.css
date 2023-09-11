@@ -154,7 +154,7 @@ h4{
   .atb{
     gap: 1rem;
 
-    span {
+    .signBtn {
       font-size: 11px;
       color: var(--blackColor);
       cursor: pointer;
@@ -171,6 +171,7 @@ h4{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: var(--whiteColor);
   position: fixed;
   top: 3.5rem;
   padding: 1rem 1rem;
@@ -391,12 +392,98 @@ h4{
         font-weight: 500;
       }
     }
+    .active{
+      background: var(--PrimaryColor);
+      color: var(--whiteColor);
+      font-weight: 500;
+    }
   }
 
   .searchInputs{
     width: 100%;
     justify-content: center;
     flex-direction: column;
+    gap: 1.5rem;
+
+    .singleInput{
+      .iconDiv{
+        padding: 16px 10px;
+        border-radius: 3rem;
+        background: var(--SecondaryColor);
+        margin-right: 1rem;
+
+        .icon{
+          color: var(--blackColor);
+          opacity: 0.7;
+        }
+      }
+      .texts{
+        h4{
+          padding-top: 0;
+          padding-bottom: 0.7rem;
+          color: var(--blackColor);
+          font-weight: 700;
+          
+        }
+        input{
+          width: 95%;
+          border: none;
+          outline: none;
+          background: transparent;
+
+          &::placeholder{
+            font-size: 12px;
+            opacity: 0.5;
+          }
+        }
+      }
+    }
   }
 }
 
+
+/* Section Styling*/
+
+.support{
+  .sectionContainer{
+    .titleDiv{
+      text-align: center;
+      small {
+        color: var(--blackColor);
+        line-height: 1.5rem;
+      }
+    }
+  }
+}
+
+.infoDiv{
+  margin-top: 2rem;
+    .gridImg{
+      width: 340px;
+      margin: auto;
+      img{
+        height: 350px;
+      }
+    }
+    .textDiv{
+      gap: 1.5rem;
+    }
+    .singleInfo{
+      .number{
+        background: var(--PrimaryColor);
+        padding: 5px 12px;
+        color: var(--whiteColor);
+        width: 40px;
+        border-radius: 3rem;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 700;
+      }
+      .colorOne{
+        background: var(--colorOne);
+      }
+      .colorTwo{
+        background: var(--colorTwo);
+      }
+    }
+}

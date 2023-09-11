@@ -36,8 +36,8 @@ function Navbar() {
         </div>
 
         <div className="flex atb">
-          <span>Sign In</span>
-          <span>Sign Out</span>
+          <span className="signBtn">Sign In</span>
+          <span className="signBtn">Sign Out</span>
         </div>
       </div>
 

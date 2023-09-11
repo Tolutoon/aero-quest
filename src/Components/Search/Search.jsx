@@ -22,7 +22,7 @@ function Search() {
         <div className="searchInputs flex">
           {/* Single Input */}
           <div className="singleInput flex">
-            <div className="IconDiv">
+            <div className="iconDiv">
               <HiOutlineLocationMarker className="icon" />
             </div>
             <div className="texts">
@@ -33,7 +33,7 @@ function Search() {
 
           {/* Single Input */}
           <div className="singleInput flex">
-            <div className="IconDiv">
+            <div className="iconDiv">
               <RiAccountPinCircleLine className="icon" />
             </div>
             <div className="texts">
@@ -44,11 +44,22 @@ function Search() {
 
           {/* Single Input */}
           <div className="singleInput flex">
-            <div className="IconDiv">
+            <div className="iconDiv">
               <SlCalender className="icon" />
             </div>
             <div className="texts">
               <h4>Check In</h4>
+              <input type="text" placeholder="Add Dates" />
+            </div>
+          </div>
+
+          {/* Single Input */}
+          <div className="singleInput flex">
+            <div className="iconDiv">
+              <SlCalender className="icon" />
+            </div>
+            <div className="texts">
+              <h4>Check Out</h4>
               <input type="text" placeholder="Add Dates" />
             </div>
           </div>
