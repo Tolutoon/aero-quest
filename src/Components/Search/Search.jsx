@@ -2,11 +2,20 @@ import React from "react";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { RiAccountPinCircleLine } from "react-icons/ri";
 import { SlCalender } from "react-icons/sl";
+import { useEffect } from "react";
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 function Search() {
+
+  //Useeffect to also set the animation duration
+  useEffect(()=>{
+    Aos.init({duration: 2000})
+  })
+
   return (
     <div className="search container section">
-      <div className="sectionContainer grid">
+      <div data-aos='fade-up' data-aos-duration='2500' className="sectionContainer grid">
         <div className="btns flex">
           <div className="singleBtn">
             <span>Economy</span>
@@ -19,7 +28,7 @@ function Search() {
           </div>
         </div>
 
-        <div className="searchInputs flex">
+        <div data-aos='fade-up' data-aos-duration='2000' className="searchInputs flex">
           {/* Single Input */}
           <div className="singleInput flex">
             <div className="iconDiv">
@@ -64,7 +73,7 @@ function Search() {
             </div>
           </div>
 
-          <button className="btn flex">Search Flight</button>
+          <button className="btn searchBtn flex">Search Flight</button>
         </div>
       </div>
     </div>

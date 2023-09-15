@@ -1,7 +1,14 @@
 import React from 'react';
+import { useEffect } from 'react';
 import gridImg from '../../assets/images/gridImg.png';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function Support() {
+
+  useEffect(()=>{
+    Aos.init({duration: 2000})
+  },[])
   return (
     <div className='support container section'>
       <div className='sectionContainer'>
@@ -15,7 +22,7 @@ function Support() {
         <div className='infoDiv grid'>
           <div className='textDiv grid'>
 
-            <div className='singleInfo'>
+            <div data-aos='fade-down' data-aos-duraton='2500' className='singleInfo'>
               <span className='number'>01</span>
               <h4>Travel requirements for Dubai</h4>
               <p>Find help with booking and travel plans, see what to expect along
@@ -23,7 +30,7 @@ function Support() {
               </p>
             </div>
 
-            <div className='singleInfo'>
+            <div data-aos='fade-down' data-aos-duraton='3500' className='singleInfo'>
               <span className='number colorOne'>02</span>
               <h4>Chauffeur services at your arrival</h4>
               <p>Find help with booking and travel plans, see what to expect along
@@ -31,7 +38,7 @@ function Support() {
               </p>
             </div>
 
-            <div className='singleInfo'>
+            <div data-aos='fade-down' data-aos-duraton='4500' className='singleInfo'>
               <span className='number colorTwo'>03</span>
               <h4>Multi-risk travel insurance</h4>
               <p>Find help with booking and travel plans, see what to expect along
@@ -39,7 +46,7 @@ function Support() {
               </p>
             </div>
           </div>
-          <div className='gridImg' >
+          <div data-aos='fade-left' data-aos-duration='2500' className='gridImg' >
           <img src={gridImg} alt=''/>
           </div>
 

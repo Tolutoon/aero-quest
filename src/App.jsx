@@ -18,10 +18,9 @@ function App() {
       <Search />
       <Support />
       <Info />
-{ /*  <Lounge />
-      <Traveler />
-      <Subscriber />
-  <Footer /> */}
+      <Lounge />
+{ /*  <Subscriber />
+      <Footer /> */}
     </div>
   )
 }

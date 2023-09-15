@@ -201,7 +201,7 @@ h4{
   }
 }
 
-@media screen and (min-width: 758px){
+@media screen and (min-width: 693px){
     .toggleIcon{
       display: none;
     }
@@ -337,16 +337,6 @@ h4{
 }
 
 
-@media screen and (min-width: 768px) {
-    .home{
-      .mainText{
-        font-size: 2rem;
-        width: 40%;
-        line-height: 3.7rem;
-        margin-top: 1rem;
-      }
-    }
-}
 
 @media screen and (max-width: 768px) {
   .heroImg{
@@ -442,6 +432,25 @@ h4{
 }
 
 
+
+@media screen and (min-width: 780px) {
+
+  .navBar{
+    align-items: center;
+  }
+  .search{
+    .sectionContainer{
+      .btns{
+        width: 70%;
+        border-radius: 3rem;
+      }
+      .searchInputs{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+}}
+
 /* Support Styling*/
 
 .support{
@@ -455,6 +464,7 @@ h4{
     }
   }
 }
+
 
 
 .infoDiv{
@@ -542,4 +552,186 @@ h4{
       }
     }
   }
+}
+
+
+/* Lounge Styling */
+
+.lounge{
+  .sectionContainer{
+    gap: 1.5rem;
+
+    .imgDiv{
+      width: 350px;
+      margin: auto;
+    }
+
+    .textDiv{
+      .grids{
+        margin-top: 1rem;
+        gap: 1.5rem;
+
+        .singleGrid{
+          .gridTitle{
+            display: block;
+            padding-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--blackColor);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* Travelers Section Styling */
+
+.travelers{
+  .sectionContainer{
+    text-align: center;
+
+    .travelerContain{
+      margin-top: 1rem;
+      gap: 1.5rem;
+
+      .singleTraveler{
+        position: relative;
+        height: 280px;
+        width: 85%;
+        max-width: 250px;
+        overflow: hidden;
+        border-radius: 10rem;
+        gap: 1rem;
+        margin: auto;
+        margin-top: 1.5rem;
+
+        .destinationImage, .travelerImage, .travelerName{
+          position: absolute;
+        }
+  
+        .destinationImage{
+          height: 100%;
+          width: 100%;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          object-fit: cover;
+        }
+        
+        .travelerImage{
+          height: 50px;
+          width: 50px;
+          object-fit: cover;
+          border-radius: 50%;
+          bottom: 60px;
+          left: 50%;
+          transform: translateX(-50%);
+          border: 5px solid rgba(225, 225, 225, 0.637);
+          transition: var(--transition);
+        }
+
+        .travelerName{
+          bottom: 0;
+          width: 100%;
+          height: max-content;
+          background: var(--whiteColor);
+          padding: 1.5rem 1rem;
+
+          span{
+            color: var(--PrimaryColor);
+          }
+        }
+      }
+
+    }
+  }
+}
+
+
+
+
+@media screen and (min-width: 680px) {
+  .home {
+    padding-top: 10rem;
+  }
+
+  .home{
+    .mainText{
+        font-size: 1.8rem;
+        line-height: 3.7rem;
+        margin-top: 1rem;
+    }
+
+    .heroImg{
+      width: 70%;
+    }
+  }
+
+  .search{
+    .sectionContainer{
+      .searchInputs{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+      }
+      .searchBtn{
+        width: max-content;
+      }
+    }
+  }
+  
+  .support{
+    .sectionContainer{
+      .infoDiv{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin-top: 4rem;
+      }
+        .textDiv{
+          grid-template-columns: repeat(2, 1fr);
+        }
+    }
+  }
+
+  .info{
+    .infoContainer{
+      padding: 0 6rem;
+      .titleDiv{
+        flex-direction: row;
+        width: 90%;
+        margin: auto;
+        align-items: center;
+        h2{
+          text-align: left;
+          max-width: 480px;
+        }
+      }
+
+      .cardDiv{
+        grid-template-columns: repeat(3, 1fr);
+
+        .singleCard{
+          max-width: 300px;
+          padding: 3rem 2rem;
+        }
+      }
+    }
+  }
+
+  .lounge{
+    .sectionContainer{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+  background: var(--greyBg);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: var(--PrimaryColor);
 }
